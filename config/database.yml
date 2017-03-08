@@ -23,21 +23,17 @@ default: &default
 
 development:
   <<: *default
-<<<<<<< HEAD
+
   database: tigaribuLabsPortfolio_development
-=======
-  database: tigaribulabs_development
->>>>>>> de6183d9b247f05eaff0722721bfbd5eafd64230
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-<<<<<<< HEAD
+
   #username: tigaribuLabsPortfolio
-=======
-  #username: tigaribulabs
->>>>>>> de6183d9b247f05eaff0722721bfbd5eafd64230
+
 
   # The password associated with the postgres role (username).
   #password:
@@ -65,11 +61,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-<<<<<<< HEAD
   database: tigaribuLabsPortfolio_test
-=======
-  database: tigaribulabs_test
->>>>>>> de6183d9b247f05eaff0722721bfbd5eafd64230
+
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -92,12 +85,6 @@ test:
 #
 production:
   <<: *default
-<<<<<<< HEAD
   database: tigaribuLabsPortfolio_production
   username: tigaribuLabsPortfolio
   password: <%= ENV['TIGARIBULABSPORTFOLIO_DATABASE_PASSWORD'] %>
-=======
-  database: tigaribulabs_production
-  username: tigaribulabs
-  password: <%= ENV['TIGARIBULABS_DATABASE_PASSWORD'] %>
->>>>>>> de6183d9b247f05eaff0722721bfbd5eafd64230
