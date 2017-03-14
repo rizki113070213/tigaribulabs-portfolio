@@ -1,4 +1,4 @@
-module set_source
+module SetSource
   extend ActiveSupport::Concern
 
   included do
