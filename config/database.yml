@@ -23,9 +23,7 @@ default: &default
 
 development:
   <<: *default
-
   database: tigaribuLabsPortfolio_development
-
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -33,7 +31,6 @@ development:
   # the same name as the operating system user that initialized the database.
 
   #username: tigaribuLabsPortfolio
-
 
   # The password associated with the postgres role (username).
   #password:
