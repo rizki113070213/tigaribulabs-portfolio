@@ -16,4 +16,8 @@ module ApplicationHelper
     end
   end
 
+
+  def copyright_generator
+    TigaribuLabsViewTool::Renderer.copyright '3000Labs', 'All rights reserved'
+  end
 end
