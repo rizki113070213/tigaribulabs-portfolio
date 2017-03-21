@@ -160,11 +160,7 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tigaribuLabs_view_tool (0.1.0)
-<<<<<<< HEAD
-    tilt (2.0.6)
-=======
     tilt (2.0.7)
->>>>>>> rubygem
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
