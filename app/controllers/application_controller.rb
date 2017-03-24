@@ -6,12 +6,12 @@ class ApplicationController < ActionController::Base
   include DefaultPageContent
 
 
-  # #include do
-  #   before_filter :configure_permitted_parameters, if: :devise_controller?
-  # #end
-  #
-  # def configure_permitted_parameters
-  #   devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :roles])
-  #   devise_parameter_sanitizer.permit(:account_update, keys: [:name, :roles])
-  # end
+  include do
+    before_filter :configure_permitted_parameters, if: :devise_controller?
+  end
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :roles])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:name, :roles])
+  end
 end
